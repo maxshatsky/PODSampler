@@ -1,0 +1,84 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  1.6                                   |
+|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    left
+    {
+
+	type codedFixedValue;
+	value uniform 0;
+	name	Tsine;
+	
+	code
+	#{
+	    const fvPatch& boundaryPatch = this->patch();
+	    const vectorField& Cf = boundaryPatch.Cf();
+	    
+	    scalarField& t = *this;
+	    
+	    scalar A = 100; //amplitude
+	    
+	    scalar F = 0.2; //frequency
+	    
+	    scalar L = 200; //level (over y=0)
+	    
+	    scalar Ph =0.5*M_PI; //phase
+
+	    forAll(Cf,I)
+	    {
+	    	//t[I] = scalar(0.0);
+	    	t[I] = A*sin(2*3.14*F*this->db().time().value() + Ph) +L; //main formula
+		//t[I] = scalar(1.0);
+	    }
+	
+	
+	#};
+
+	
+	codeInclude
+	#{
+	#};
+	
+	codeOptions
+	#{
+	#};
+	
+	codeLibs
+	#{
+	#};
+	
+
+    }
+
+    right
+    {
+        type zeroGradient;
+        
+    }
+
+    empty
+    {
+      type   empty;
+    }  
+
+}
+
+// ************************************************************************* //

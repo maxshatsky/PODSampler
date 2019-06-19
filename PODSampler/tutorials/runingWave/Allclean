@@ -1,0 +1,13 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# The code deletes all the directories and
+# files made in calculation and post-processing.
+# The code becomes not actual very frequently.
+
+#cleanCase
+rm -rf processor*/0.*
+rm -rf processor*/[1-9]*
+rm -rf log* surface* ?e* processor?/*e-* processor?/*e+* POD/  [1-9]* 0.* dynamicCode/
+rm -rf surfaceGeometryData/ processor*/[1-9]* processor*/0.* postProcessing/
+# ----------------------------------------------------------------- end-of-file
