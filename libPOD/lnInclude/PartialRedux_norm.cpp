@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/PartialRedux_norm.cpp

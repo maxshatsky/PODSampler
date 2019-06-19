@@ -1,0 +1,1 @@
+../thirdparty/Eigen/unsupported/Eigen/src/MatrixFunctions/MatrixPower.h

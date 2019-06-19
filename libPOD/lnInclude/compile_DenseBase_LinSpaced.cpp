@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_DenseBase_LinSpaced.cpp

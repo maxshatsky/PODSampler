@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/Tridiagonalization_Tridiagonalization_MatrixType.cpp
