@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/Tridiagonalization_householderCoefficients.cpp

@@ -21,20 +21,20 @@ FoamFile
     {
         type            patch;
         nFaces          16;
-        startFace       3984;
+        startFace       384;
     }
     right
     {
         type            patch;
         nFaces          16;
-        startFace       4000;
+        startFace       400;
     }
     empty
     {
         type            empty;
         inGroups        1(empty);
-        nFaces          1600;
-        startFace       4016;
+        nFaces          160;
+        startFace       416;
     }
 )
 

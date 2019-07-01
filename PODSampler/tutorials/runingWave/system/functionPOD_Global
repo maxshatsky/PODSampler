@@ -7,7 +7,7 @@
         // Function object enabled flag
         enabled         true;
 
-        // When to output the average fields
+        // When to read the field state
         writeControl    timeStep;
 
 	interpolationScheme aaa;
@@ -26,21 +26,19 @@
 	// Snapshoting begins from nearest iteration with current time value bigger than PODStartTime.
 	// It will agregate a part of time before the PODStartTime: delta T value plus PODStartTime minus current time value
 	// type scalar
-	PODStartTime		1.12;
+	PODStartTime		1;
 
         // Period of sampling.
         // One snapshot will contain average value inside each PODdeltaT interval
-        PODdeltaT		0.719;
+        PODdeltaT		0.34;
 
 	// Number of snapshot to make
-	// At the 11th of March this value doesn't stop the solver!
-	// WARNING! Solver can finish earlier if time ends but nSnapshots aren't reached!
 	// type label
 	nSnapshots		15;
 
 	// number of modes to use in POD
 	// type label
-	nmodes 			3;
+	nmodes 			5;
 
 	// True if you want the case to stop after POD calculation
 	// type bool
@@ -65,12 +63,7 @@
 	// default false
 	writeRestoredValues	true;
 
-
-
-//================================= NEW VERSION
-
 	// True if you want to start with some saved data
         continueWriting		false;
-
 
 //**************************************************\\

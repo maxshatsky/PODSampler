@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/BiCGSTAB_step_by_step.cpp

@@ -1,0 +1,10 @@
+
+    foT
+    {
+        // Name of field to sample
+	// type word
+	fieldName T;
+	#include "functionPOD_Global"
+    }
+
+
