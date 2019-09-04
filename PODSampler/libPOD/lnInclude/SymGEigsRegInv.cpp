@@ -1,1 +1,0 @@
-../thirdparty/spectra-0.6.1/test/SymGEigsRegInv.cpp

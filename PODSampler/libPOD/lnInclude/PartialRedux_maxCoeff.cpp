@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/PartialRedux_maxCoeff.cpp

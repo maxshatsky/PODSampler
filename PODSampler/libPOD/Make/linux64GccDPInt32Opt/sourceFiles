@@ -1,5 +1,0 @@
-SOURCE = \
-foamFFTWDriver/foamFFTWDriver.C \
-PODSampler.C \
-
-# sources

@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_EigenSolver_compute.cpp

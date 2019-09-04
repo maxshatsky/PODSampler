@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/HouseholderQR_solve.cpp

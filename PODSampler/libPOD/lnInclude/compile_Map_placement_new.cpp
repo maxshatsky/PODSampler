@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_Map_placement_new.cpp

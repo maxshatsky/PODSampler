@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_Matrix_setConstant_int.cpp

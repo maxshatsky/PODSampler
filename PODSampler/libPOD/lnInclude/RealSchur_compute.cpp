@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/RealSchur_compute.cpp

@@ -1,1 +1,0 @@
-../thirdparty/splinter/include/bsplinebasis1d.h

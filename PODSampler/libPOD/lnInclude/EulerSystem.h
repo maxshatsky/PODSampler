@@ -1,1 +1,0 @@
-../thirdparty/Eigen/unsupported/Eigen/src/EulerAngles/EulerSystem.h

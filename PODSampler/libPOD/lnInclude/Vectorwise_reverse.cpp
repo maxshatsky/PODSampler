@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/Vectorwise_reverse.cpp

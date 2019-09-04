@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_tut_arithmetic_redux_minmax.cpp

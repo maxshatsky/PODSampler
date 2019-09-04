@@ -1,1 +1,0 @@
-../thirdparty/Eigen/test/stable_norm.cpp

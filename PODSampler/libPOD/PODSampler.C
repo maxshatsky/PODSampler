@@ -370,19 +370,6 @@ void Foam::PODSampler::checkSettingsPt1()
             << nl << "Set nmodes as any integer >= 1, but less than nSnapshots."
             << nl << exit(FatalError);
     }
-
-    /*if(continueWriting_ && !writeInitValues_)
-    {
-        stopTheCase();
-
-        FatalErrorInFunction
-            << nl << "In field "<< fieldName_
-            << nl << "continueWriting==true and  writeInitValues==false"
-            << nl << "It leads to crash at the data gathering from all processors"
-            << nl << "because of current program version's disability to set old values_ at non-master processors."
-            << nl << nl << "TIP: Set writeInitValues = TRUE or refuse to use continueWriting. Good luck!"
-            << nl << exit(FatalError);
-    }*/
 }
 
 bool Foam::PODSampler::execute()
@@ -659,7 +646,7 @@ void Foam::PODSampler::sampleAndCalc
 
     if // i.e. it is the very first call of the function
     (
-        vField.time().timeOutputValue() - PODStartTime_ <= vField.time().deltaTValue()
+        vField.time().timeOutputValue() - PODStartTime_ <= 1.1*vField.time().deltaTValue()
     )
     {
         initialize(values, vField.time().timeOutputValue());

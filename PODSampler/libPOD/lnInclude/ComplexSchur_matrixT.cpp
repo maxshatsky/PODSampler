@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/ComplexSchur_matrixT.cpp

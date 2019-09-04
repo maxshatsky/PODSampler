@@ -1,1 +1,0 @@
-../thirdparty/Eigen/demos/mandelbrot/mandelbrot.cpp

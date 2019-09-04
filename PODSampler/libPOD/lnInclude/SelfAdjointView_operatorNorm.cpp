@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/SelfAdjointView_operatorNorm.cpp

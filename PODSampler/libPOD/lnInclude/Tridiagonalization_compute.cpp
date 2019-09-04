@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/Tridiagonalization_compute.cpp

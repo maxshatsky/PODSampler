@@ -1,1 +1,0 @@
-../thirdparty/Eigen/test/simplicial_cholesky.cpp
