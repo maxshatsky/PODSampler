@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_EigenSolver_EigenSolver_MatrixType.cpp

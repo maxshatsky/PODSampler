@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/ComplexEigenSolver_eigenvectors.cpp

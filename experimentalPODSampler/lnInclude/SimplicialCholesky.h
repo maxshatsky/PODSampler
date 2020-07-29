@@ -1,1 +1,0 @@
-../thirdparty/Eigen/Eigen/src/SparseCholesky/SimplicialCholesky.h

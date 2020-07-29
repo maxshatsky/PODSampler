@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/MatrixBase_homogeneous.cpp

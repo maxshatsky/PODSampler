@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_Cwise_boolean_or.cpp

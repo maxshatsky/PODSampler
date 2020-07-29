@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_tut_arithmetic_transpose_aliasing.cpp

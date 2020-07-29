@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/Tutorial_SlicingCol.cpp

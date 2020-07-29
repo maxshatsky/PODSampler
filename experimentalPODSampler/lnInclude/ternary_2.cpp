@@ -1,1 +1,0 @@
-../thirdparty/Eigen/failtest/ternary_2.cpp

@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_Tutorial_ReshapeMat2Vec.cpp

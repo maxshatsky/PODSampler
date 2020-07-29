@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/DirectionWise_hnormalized.cpp

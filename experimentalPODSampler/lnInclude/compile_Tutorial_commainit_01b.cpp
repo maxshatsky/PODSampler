@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_Tutorial_commainit_01b.cpp

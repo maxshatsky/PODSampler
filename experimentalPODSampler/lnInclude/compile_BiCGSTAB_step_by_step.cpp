@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_BiCGSTAB_step_by_step.cpp

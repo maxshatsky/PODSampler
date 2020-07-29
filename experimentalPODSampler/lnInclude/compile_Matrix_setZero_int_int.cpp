@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_Matrix_setZero_int_int.cpp

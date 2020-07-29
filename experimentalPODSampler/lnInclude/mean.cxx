@@ -1,1 +1,0 @@
-../thirdparty/Eigen/bench/btl/data/mean.cxx

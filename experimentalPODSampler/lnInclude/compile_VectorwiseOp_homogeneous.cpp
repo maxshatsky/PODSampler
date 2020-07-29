@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_VectorwiseOp_homogeneous.cpp

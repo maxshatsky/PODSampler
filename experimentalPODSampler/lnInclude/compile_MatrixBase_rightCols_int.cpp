@@ -1,1 +1,0 @@
-../thirdparty/Eigen/build/doc/snippets/compile_MatrixBase_rightCols_int.cpp

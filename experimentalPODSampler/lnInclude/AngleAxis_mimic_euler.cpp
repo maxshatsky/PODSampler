@@ -1,1 +1,0 @@
-../thirdparty/Eigen/doc/snippets/AngleAxis_mimic_euler.cpp
