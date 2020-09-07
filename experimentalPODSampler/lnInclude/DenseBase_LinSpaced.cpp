@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/DenseBase_LinSpaced.cpp

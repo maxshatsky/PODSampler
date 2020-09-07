@@ -1,0 +1,3 @@
+sampledEnsightSurfaceMesh.C
+
+LIB = $(FOAM_USER_LIBBIN)/libsampledEnsightSurfaceMesh

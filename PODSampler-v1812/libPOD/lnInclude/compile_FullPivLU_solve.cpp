@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_FullPivLU_solve.cpp

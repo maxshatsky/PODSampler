@@ -1,0 +1,1 @@
+../thirdparty/Eigen/test/product_selfadjoint.cpp

@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/Tutorial_solve_triangular_inplace.cpp

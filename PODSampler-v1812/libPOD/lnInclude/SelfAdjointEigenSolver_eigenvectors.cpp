@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/SelfAdjointEigenSolver_eigenvectors.cpp

@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_MatrixBase_fixedBlock_int_int.cpp

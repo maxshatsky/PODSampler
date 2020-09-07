@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_RealSchur_compute.cpp

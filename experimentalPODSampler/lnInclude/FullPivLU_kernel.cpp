@@ -1,0 +1,1 @@
+../thirdparty/Eigen/doc/snippets/FullPivLU_kernel.cpp

@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_PartialRedux_minCoeff.cpp
