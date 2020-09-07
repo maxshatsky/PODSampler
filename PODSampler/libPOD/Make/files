@@ -1,4 +1,0 @@
-foamFFTWDriver/foamFFTWDriver.C
-PODSampler.C
-
-LIB = $(FOAM_USER_LIBBIN)/libPOD
