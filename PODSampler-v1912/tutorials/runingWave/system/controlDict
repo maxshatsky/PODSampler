@@ -23,13 +23,13 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         NAN O_o ; //0.1; //65;
+endTime         65; //0.1;
 
 deltaT          0.05;
 
 writeControl    timeStep;
 
-writeInterval   1;
+writeInterval   10;
 
 purgeWrite      0;
 

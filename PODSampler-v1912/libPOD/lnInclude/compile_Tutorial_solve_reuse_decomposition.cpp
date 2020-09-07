@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_Tutorial_solve_reuse_decomposition.cpp

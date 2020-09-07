@@ -1,0 +1,1 @@
+../thirdparty/Eigen/build/doc/snippets/compile_tut_matrix_assignment_resizing.cpp

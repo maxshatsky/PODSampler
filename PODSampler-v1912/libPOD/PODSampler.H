@@ -48,52 +48,13 @@ SourceFiles
 #include "OFstream.H"
 #include "IFstream.H"
 #include "PatchTools.H"
-#include "surfaceWriter.H" // !!!!!!
-#include "foamSurfaceWriter.H" // !!!!!
+#include "surfaceWriter.H"
+#include "foamSurfaceWriter.H"
 #include "foamFFTWDriver.H"
 #include "sampledSurface.H"
 #include <Eigen/Eigenvalues>
 #include "addToRunTimeSelectionTable.H"
 
-//#include "StringStream.H"
-//#include "ISstream.H"
-
-
-//trash?
-/*
-#include "Time.H"
-#include <iomanip>
-#include <fstream>
-#include "Tuple2.H"
-#include "Switch.H"
-#include "IOmanip.H"
-#include "argList.H"
-#include "HashSet.H"
-
-#include "polyMesh.H"
-#include "OFstream.H"
-#include "Eigen/Dense"
-#include "volFields.H"
-#include "PatchTools.H"
-#include "dictionary.H"
-#include "Foam2Eigen.H"
-#include "wordReList.H"
-#include "mapPolyMesh.H"
-#include "ListListOps.H"
-#include "volFieldsFwd.H"
-#include "IOobjectList.H"
-#include "pointFieldFwd.H"
-#include "meshedSurfRef.H"
-#include "surfaceFields.H"
-#include "stringListOps.H"
-#include "functionObject.H"
-#include <Eigen/Eigenvalues>
-#include "surfaceFieldsFwd.H"
-#include "coordinateSystem.H"
-#include "primitiveFieldsFwd.H"
-#include "volPointInterpolation.H"
-#include "addToRunTimeSelectionTable.H"
-*/
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -160,8 +121,7 @@ protected:
         PtrList<sampledSurface> controlSurfaces_;
 
         //- Writer for surface geometry
-        //autoPtr<Foam::surfaceWriters::foamWriter> formatter_;
-        Foam::surfaceWriters::foamWriter formatter_;
+        autoPtr<surfaceWriter> formatter_;
 
 	//- glogal string to keep directory name for any output
 	std::string dirName_;

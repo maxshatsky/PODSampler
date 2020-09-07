@@ -16,7 +16,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 //- The total number of domains (mandatory)
-numberOfSubdomains  4;
+numberOfSubdomains  3;
 
 //- The decomposition method (mandatory)
 method          simple;
@@ -109,7 +109,7 @@ multiLevelCoeffs
 
 simpleCoeffs
 {
-    n           (4 1 1);
+    n           (3 1 1);
     // delta       0.001;  //< default value = 0.001
 }
 

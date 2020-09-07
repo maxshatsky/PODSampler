@@ -1,8 +1,8 @@
 /*--------------------------------*- C++ -*----------------------------------*\
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  1.6                                   |
-|   \\  /    A nd           | Web:      http://www.OpenFOAM.org               |
+|  \\    /   O peration     | Version:  v1912                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
@@ -10,11 +10,13 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
+    location    "0";
     object      T;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 dimensions      [0 0 0 1 0 0 0];
+
 
 internalField   uniform 0;
 
@@ -22,13 +24,12 @@ boundaryField
 {
     left
     {
-
-	type codedFixedValue;
-	value uniform 0;
-	name	Tsine;
-	
-	code
-	#{
+        type            codedFixedValue;
+        value           uniform 0;
+        name            Tsine;
+        codeInclude     #{
+	#};
+        code            #{
 	    const fvPatch& boundaryPatch = this->patch();
 	    const vectorField& Cf = boundaryPatch.Cf();
 	    
@@ -51,34 +52,20 @@ boundaryField
 	
 	
 	#};
-
-	
-	codeInclude
-	#{
+        codeOptions     #{
 	#};
-	
-	codeOptions
-	#{
+        codeLibs        #{
 	#};
-	
-	codeLibs
-	#{
-	#};
-	
-
     }
-
     right
     {
-        type zeroGradient;
-        
+        type            zeroGradient;
     }
-
     empty
     {
-      type   empty;
-    }  
-
+        type            empty;
+    }
 }
+
 
 // ************************************************************************* //

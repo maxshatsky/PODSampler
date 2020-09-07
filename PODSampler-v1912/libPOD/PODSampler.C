@@ -66,58 +66,32 @@ void Foam::PODSampler::writeGeometry() //const
         Info << "in surfaces list\n";        
         
         const sampledSurface& s = controlSurfaces_.operator[](surfI);
-        
 
         if (Pstream::parRun())
         {
-            Info << "surfI size = " << mergeList_[surfI].points.size() << nl;
+            Pout << "mergeList_[surfI].faces.size() = " << mergeList_[surfI].faces.size() << nl;
 
-            if (Pstream::master() && mergeList_[surfI].faces.size())
-            {
-                /*formatter_->write
-                (
-                    outputDir,
-                    s.name(),
-                    meshedSurfRef
-                    (
-                        mergeList_[surfI].points,
-                        mergeList_[surfI].faces
-                    )
-                );*/
-                
-                formatter_.open
-                (
-                    mergeList_[surfI].points,
-                    mergeList_[surfI].faces,
-                    outputDir,
-                    true
-                );
-                formatter_.write();
-            }
+            formatter_->open
+            (
+                mergeList_[surfI].points,
+                mergeList_[surfI].faces,
+                outputDir,
+                true
+            );
+            formatter_->write();
         }
         else if (s.points().size())
         {
             Info << s.points().size() << nl;
-
-            /*formatter_->write
-            (
-                outputDir,
-                s.name(),
-                meshedSurfRef
-                (
-                    s.points(),
-                    s.faces()
-                )
-            );*/
             
-            formatter_.open
+            formatter_->open
             (
                 s.points(),
                 s.faces(),
                 outputDir,
                 true
             );
-            formatter_.write();
+            formatter_->write();
         }
         else
         {
@@ -235,9 +209,7 @@ bool Foam::PODSampler::read(const dictionary& dict)
 
     // Define the surface formatter
     // Optionally defined extra controls for the output formats
-    //formatter_ = surfaceWriter::New
-    //formatter_ = Foam::surfaceWriters::foamWriter::New
-    formatter_.New
+    formatter_ = surfaceWriter::New
     (
         writeType,
         dict.subOrEmptyDict("formatOptions").subOrEmptyDict(writeType)
